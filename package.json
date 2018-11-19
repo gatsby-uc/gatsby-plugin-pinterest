@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-plugin-pinterest",
+  "description": "Load the Pinterest JavaScript to let users Save images to their boards on hover",
+  "version": "1.0.0",
+  "author": "Robin Métral <robin@metral.ch>",
+  "bugs": {
+    "url": "https://github.com/robinmetral/gatsby-plugin-pinterest/issues"
+  },
+  "homepage": "https://github.com/robinmetral/gatsby-plugin-pinterest",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "pinterest-widget",
+    "pinterest-save",
+    "gatsby-plugin-pinterest"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": ">2.4.5"
+  },
+  "repository": "https://github.com/robinmetral/gatsby-plugin-pinterest"
+}
