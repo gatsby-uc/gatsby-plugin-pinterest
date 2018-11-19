@@ -3,17 +3,13 @@ Load the Pinterest JavaScript to let users Save images to their boards on hover 
 
 ## Install
 
-*Will publish to the Gatsby Plugin Library and NPM soon*
+In your Gatsby project directory, run:
 
-### Manual Install
+`npm install --save gatsby-plugin-pinterest`
 
-* Create a `plugins` directory at the root of your Gatsby project directory
-* Copy the `gatsby-plugin-pinterest` directory into it
-* Youre set! To activate, read *How to use*
+## Activate
 
-## How to use
-
-Declare the plugin in your `gatsby-config.js` file at the root of your project directory:
+Declare the plugin in your `gatsby-config.js`:
 
 ```javascript
 plugins: [
@@ -29,6 +25,4 @@ plugins: [
 ];
 ```
 
-## Examples
-
-*See the docs on [Pinterest Developers](https://developers.pinterest.com/docs/widgets/save/#examples)*
+*See the [Pinterest Developers](https://developers.pinterest.com/docs/widgets/save/#examples) docs for more infos and examples*
