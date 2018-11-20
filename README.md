@@ -30,4 +30,6 @@ plugins: [
 ];
 ```
 
-*See the [Pinterest Developers](https://developers.pinterest.com/docs/widgets/save/#examples) docs for more infos and examples*
+## Contribute
+
+Fork this repo and make a PR!
