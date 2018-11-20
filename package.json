@@ -17,7 +17,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "gatsby": ">2.0.0"
+    "gatsby": "^2.0.0"
   },
   "repository": "https://github.com/robinmetral/gatsby-plugin-pinterest"
 }
