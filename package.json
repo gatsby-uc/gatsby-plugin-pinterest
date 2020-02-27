@@ -25,11 +25,14 @@
     "index.js"
   ],
   "scripts": {
+    "build": "kcd-scripts build --out-dir .",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "lint": "kcd-scripts lint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "^7.8.4"
+  },
   "devDependencies": {
     "all-contributors-cli": "^6.14.0",
     "kcd-scripts": "^5.2.0"
