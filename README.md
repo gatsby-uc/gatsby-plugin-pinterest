@@ -13,6 +13,7 @@
 [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 [![PRs Welcome][prs-badge]][prs]
 [![Code of Conduct][coc-badge]][coc]
 <!-- prettier-ignore-end -->
@@ -29,6 +30,7 @@
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
   - [💡 Feature Requests](#-feature-requests)
+- [Contributors](#contributors-)
 - [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -97,6 +99,27 @@ Please file an issue to suggest new features. Vote on feature requests by adding
 a 👍. This helps maintainers prioritize what to work on.
 
 [**See Feature Requests**][requests]
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key][emojis]):
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://robinmetral.com"><img src="https://avatars3.githubusercontent.com/u/35560568?v=4" width="100px;" alt=""/><br /><sub><b>Robin Métral</b></sub></a><br /><a href="https://github.com/robinmetral/gatsby-plugin-pinterest/commits?author=robinmetral" title="Code">💻</a> <a href="https://github.com/robinmetral/gatsby-plugin-pinterest/commits?author=robinmetral" title="Documentation">📖</a> <a href="#ideas-robinmetral" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://www.osiux.ws/"><img src="https://avatars2.githubusercontent.com/u/204463?v=4" width="100px;" alt=""/><br /><sub><b>Eduardo Reveles</b></sub></a><br /><a href="https://github.com/robinmetral/gatsby-plugin-pinterest/commits?author=osiux" title="Code">💻</a></td>
+    <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt=""/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="https://github.com/robinmetral/gatsby-plugin-pinterest/commits?author=MichaelDeBoey" title="Documentation">📖</a> <a href="#infra-MichaelDeBoey" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#tool-MichaelDeBoey" title="Tools">🔧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors][all-contributors] specification.
+Contributions of any kind welcome!
 
 ## LICENSE
 
