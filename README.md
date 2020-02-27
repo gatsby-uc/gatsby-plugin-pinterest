@@ -40,7 +40,7 @@
 This module is distributed via [npm][npm] which is bundled with [node][node] and
 should be installed as one of your project's `dependencies`:
 
-```
+```sh
 npm install gatsby-plugin-pinterest
 ```
 
@@ -72,7 +72,7 @@ module.exports = {
 
     // Other plugins here...
   ],
-}
+};
 ```
 
 ## Inspiration
@@ -103,6 +103,7 @@ a 👍. This helps maintainers prioritize what to work on.
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key][emojis]):
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -116,6 +117,7 @@ Thanks goes to these wonderful people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
