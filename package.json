@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-pinterest",
-  "version": "1.1.0",
+  "version": "0.0.0-semantically-released",
   "description": "Gatsby plugin to add Pinterest's embed script.",
   "main": "./gatsby-browser.js",
   "keywords": [
@@ -28,7 +28,8 @@
     "build": "kcd-scripts build --out-dir .",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "lint": "kcd-scripts lint"
+    "lint": "kcd-scripts lint",
+    "validate": "kcd-scripts validate"
   },
   "dependencies": {
     "@babel/runtime": "^7.8.4"
