@@ -1,10 +1,12 @@
-const injectPinterestScript = (tall, round) => {
+const injectPinterestScript = ({ tall, round, imageHover }) => {
   function addJS() {
     const s = document.createElement(`script`);
     s.type = `text/javascript`;
     s.setAttribute("async", "async");
     s.setAttribute("defer", "defer");
+    if(imageHover) {
       s.setAttribute("data-pin-hover", "true");
+    }
     if(tall) {
       s.setAttribute("data-pin-tall", "true");
     }
@@ -20,14 +22,21 @@ const injectPinterestScript = (tall, round) => {
 let injectedPinterestScript = false
 
 exports.onRouteUpdate = (args, pluginOptions) => {
-  if (document.querySelector('[data-pin-do]') !== null) {
-    if (!injectedPinterestScript) {
-      const {
-        tall = true,
-        round = false,
-      } = pluginOptions;
+  const {
+    tall = true,
+    round = false,
+    imageHover = false,
+  } = pluginOptions;
 
-      injectPinterestScript(tall, round);
+  const selectors = ['[data-pin-do]'];
+
+  if (imageHover) {
+    selectors.push('img');
+  }
+
+  if (document.querySelector(selectors.join(',')) !== null) {
+    if (!injectedPinterestScript) {
+      injectPinterestScript({ tall, round, imageHover });
       injectedPinterestScript = true;
     }
   }
