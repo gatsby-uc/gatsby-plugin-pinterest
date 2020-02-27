@@ -1,23 +1,38 @@
 {
   "name": "gatsby-plugin-pinterest",
-  "description": "Load the Pinterest JavaScript to let users Save images to their boards on hover",
   "version": "1.1.0",
-  "author": "Robin Métral <robin@metral.ch>",
-  "bugs": {
-    "url": "https://github.com/robinmetral/gatsby-plugin-pinterest/issues"
-  },
-  "homepage": "https://github.com/robinmetral/gatsby-plugin-pinterest",
+  "description": "Gatsby plugin to add Pinterest's embed script.",
+  "main": "./gatsby-browser.js",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "pinterest-widget",
-    "pinterest-save",
-    "gatsby-plugin-pinterest"
+    "embed",
+    "pinterest",
+    "pinterest-widget"
   ],
+  "author": "Robin Métral <robin@metral.ch> (https://robinmetral.com)",
   "license": "MIT",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robinmetral/gatsby-plugin-pinterest"
+  },
+  "bugs": {
+    "url": "https://github.com/robinmetral/gatsby-plugin-pinterest/issues"
+  },
+  "homepage": "https://github.com/robinmetral/gatsby-plugin-pinterest#readme",
+  "files": [
+    "gatsby-browser.js",
+    "index.js"
+  ],
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
   "peerDependencies": {
     "gatsby": "^2.0.0"
   },
-  "repository": "https://github.com/robinmetral/gatsby-plugin-pinterest"
+  "engines": {
+    "node": ">=8",
+    "npm": ">=6",
+    "yarn": ">=1"
+  }
 }
