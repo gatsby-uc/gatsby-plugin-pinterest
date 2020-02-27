@@ -17,10 +17,18 @@ const injectPinterestScript = (tall, round) => {
   addJS();
 };
 
-exports.onClientEntry = (args, pluginOptions) => {
-  const {
-    tall = true,
-    round = false,
-  } = pluginOptions;
-  injectPinterestScript(tall, round);
+let injectedPinterestScript = false
+
+exports.onRouteUpdate = (args, pluginOptions) => {
+  if (document.querySelector('[data-pin-do]') !== null) {
+    if (!injectedPinterestScript) {
+      const {
+        tall = true,
+        round = false,
+      } = pluginOptions;
+
+      injectPinterestScript(tall, round);
+      injectedPinterestScript = true;
+    }
+  }
 };
