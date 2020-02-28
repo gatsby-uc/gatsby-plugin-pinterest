@@ -1,7 +1,7 @@
 <div align="center">
 <h1>gatsby-plugin-pinterest</h1>
 
-<p>Gatsby plugin to add Pinterest's embed script. 📍</p>
+<p>Gatsby plugin to add Pinterest's add-on script. 📍</p>
 </div>
 
 ---
@@ -26,11 +26,10 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Inspiration](#inspiration)
-- [Other Solutions](#other-solutions)
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
   - [💡 Feature Requests](#-feature-requests)
-- [Contributors](#contributors-)
+- [Contributors ✨](#contributors-)
 - [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

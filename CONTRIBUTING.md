@@ -15,7 +15,7 @@ series [How to Contribute to an Open Source Project on GitHub][egghead]
 > pull requests from branches on your fork. To do this, run:
 >
 > ```
-> git remote add upstream https://github.com/kentcdodds/<%= moduleName %>
+> git remote add upstream https://github.com/robinmetral/gatsby-plugin-pinterest
 > git fetch upstream
 > git branch --set-upstream-to=upstream/master master
 > ```
@@ -42,5 +42,5 @@ requests! Thanks!
 <!-- prettier-ignore-start -->
 [egghead]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [all-contributors]: https://github.com/all-contributors/all-contributors
-[issues]: https://github.com/kentcdodds/<%= moduleName %>/issues
+[issues]: https://github.com/robinmetral/gatsby-plugin-pinterest/issues
 <!-- prettier-ignore-end -->

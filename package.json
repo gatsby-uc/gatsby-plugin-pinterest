@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-pinterest",
   "version": "0.0.0-semantically-released",
-  "description": "Gatsby plugin to add Pinterest's embed script.",
+  "description": "Gatsby plugin to add Pinterest's add-on script.",
   "main": "./gatsby-browser.js",
   "keywords": [
     "gatsby",
