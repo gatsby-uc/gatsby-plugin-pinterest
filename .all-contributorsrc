@@ -1,0 +1,47 @@
+{
+  "projectName": "gatsby-plugin-pinterest",
+  "projectOwner": "robinmetral",
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "contributors": [
+    {
+      "login": "robinmetral",
+      "name": "Robin Métral",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/35560568?v=4",
+      "profile": "https://robinmetral.com",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "osiux",
+      "name": "Eduardo Reveles",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/204463?v=4",
+      "profile": "https://www.osiux.ws/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MichaelDeBoey",
+      "name": "Michaël De Boey",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6643991?v=4",
+      "profile": "https://michaeldeboey.be",
+      "contributions": [
+        "doc",
+        "infra",
+        "tool"
+      ]
+    }
+  ]
+}
