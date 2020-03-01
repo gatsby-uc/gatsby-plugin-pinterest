@@ -8,7 +8,6 @@
 
 <!-- prettier-ignore-start -->
 [![Build Status][build-badge]][build]
-[![Code Coverage][coverage-badge]][coverage]
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
@@ -62,10 +61,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-pinterest`,
       options: {
-        // Set to true to hide the text and display only a round P button
-        round: false, // default
-        // Set to true to display a bigger button
-        tall: true, // default
+        // If you just want to use the default, you can set this to `true`, defaults to `false`
+        saveButton: {
+          // Set to true to hide the text and display only a round P button
+          round: false, // default
+          // Set to true to display a bigger button
+          tall: true, // default
+        },
       },
     },
 
