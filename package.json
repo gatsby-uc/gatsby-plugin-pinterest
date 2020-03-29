@@ -33,11 +33,11 @@
     "validate": "kcd-scripts validate"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.7"
+    "@babel/runtime": "^7.9.2"
   },
   "devDependencies": {
     "all-contributors-cli": "^6.14.0",
-    "kcd-scripts": "^5.4.0"
+    "kcd-scripts": "^5.6.1"
   },
   "peerDependencies": {
     "gatsby": "^2.20.0"
