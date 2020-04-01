@@ -152,7 +152,7 @@ MIT
 [good-first-issue]: https://github.com/robinmetral/gatsby-plugin-pinterest/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3Aenhancement+label%3A%22good+first+issue%22
 
 [gatsby]: https://github.com/gatsbyjs/gatsby
-[gatsby-plugin-instagram-embed]: https://github.com/jlengstorf/gatsby-plugin-instagram-embed
+[gatsby-plugin-instagram-embed]: https://github.com/MichaelDeBoey/gatsby-plugin-instagram-embed
 [gatsby-plugin-twitter]: https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter
 [instagram]: https://instagram.com
 [pinterest]: https://pinterest.com
