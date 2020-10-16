@@ -12,7 +12,9 @@
 [![downloads][downloads-badge]][npmtrends]
 [![MIT License][license-badge]][license]
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![PRs Welcome][prs-badge]][prs]
 [![Code of Conduct][coc-badge]][coc]
 <!-- prettier-ignore-end -->
@@ -80,8 +82,8 @@ module.exports = {
 
 Just like [`gatsby-plugin-twitter`][gatsby-plugin-twitter] and
 [`gatsby-plugin-instagram-embed`][gatsby-plugin-instagram-embed] are doing for
-the [Twitter][twitter] and [Instagram][instagram] embed script, this plugin adds
-the [Pinterest][pinterest] embed script to your [`gatsby`][gatsby] site.
+the [Twitter][twitter] and [Instagram][instagram] embed scripts, this plugin
+adds the [Pinterest][pinterest] embed script to your [`gatsby`][gatsby] site.
 
 ## Issues
 
