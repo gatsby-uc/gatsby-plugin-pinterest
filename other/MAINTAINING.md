@@ -41,7 +41,7 @@ know when this is someone's first ever PR and we want their experience to be as
 positive as possible, so be uplifting and constructive.
 
 When you merge the pull request, 99% of the time you should use the
-[Squash and merge](https://help.github.com/articles/merging-a-pull-request)
+[Squash and merge](https://help.github.com/articles/merging-a-pull-request/)
 feature. This keeps our git history clean, but more importantly, this allows us
 to make any necessary changes to the commit message so we release what we want
 to release. See the next section on Releases for more about that.

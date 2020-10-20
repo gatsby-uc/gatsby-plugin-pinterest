@@ -1,2 +1,6 @@
+node_modules
+coverage
+dist
+
 /gatsby-browser.js
 /gatsby-node.js
