@@ -1,8 +1,21 @@
-const deprecationWarning = `[gatsby-plugin-pinterest] From now on, you can use the 'saveButton' option to show Pinterest's save button on images.
+if (process.env.GATSBY_EXPERIMENTAL_PLUGIN_OPTION_VALIDATION) {
+  exports.pluginOptionsSchema = ({ Joi }) =>
+    Joi.object({
+      saveButton: Joi.alternatives().try(
+        Joi.boolean(),
+        Joi.object({
+          round: Joi.boolean(),
+          tall: Joi.boolean(),
+        }),
+      ),
+    });
+} else {
+  const deprecationWarning = `[gatsby-plugin-pinterest] From now on, you can use the 'saveButton' option to show Pinterest's save button on images.
 See https://github.com/robinmetral/gatsby-plugin-pinterest#usage`;
 
-exports.onPreInit = ({ reporter }, { round, tall } = {}) => {
-  if (round || tall) {
-    reporter.warn(deprecationWarning);
-  }
-};
+  exports.onPreInit = ({ reporter }, { round, tall } = {}) => {
+    if (round || tall) {
+      reporter.warn(deprecationWarning);
+    }
+  };
+}
