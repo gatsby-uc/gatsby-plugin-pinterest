@@ -19,6 +19,20 @@ test.each`
   },
 );
 
+test("should provide meaningful errors when fields are deprecated", async () => {
+  const expectedErrors = [
+    "'round' is no longer supported. Use 'saveButton.round' instead by setting it to the same value you had before on 'round'.",
+    "'tall' is no longer supported. Use 'saveButton.tall' instead by setting it to the same value you had before on 'tall'.",
+  ];
+
+  const { errors } = await testPluginOptionsSchema(pluginOptionsSchema, {
+    round: true,
+    tall: true,
+  });
+
+  expect(errors).toEqual(expectedErrors);
+});
+
 test.each`
   saveButton
   ${undefined}
