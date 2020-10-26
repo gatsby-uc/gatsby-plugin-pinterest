@@ -1,6 +1,4 @@
 language: node_js
-cache:
-  npm: false
 notifications:
   email: false
 node_js:
@@ -8,7 +6,6 @@ node_js:
   - 10
   - 12
   - 14
-  - node
 install: npm install
 script:
   - npm run validate
