@@ -15,13 +15,15 @@ if (process.env.GATSBY_EXPERIMENTAL_PLUGIN_OPTION_VALIDATION) {
   exports.pluginOptionsSchema = ({ Joi }) =>
     Joi.object({
       ...getDeprecatedOptions({ Joi }),
-      saveButton: Joi.alternatives().try(
-        Joi.boolean(),
-        Joi.object({
-          round: Joi.boolean(),
-          tall: Joi.boolean(),
-        }),
-      ),
+      saveButton: Joi.alternatives()
+        .try(
+          Joi.boolean(),
+          Joi.object({
+            round: Joi.boolean().default(false),
+            tall: Joi.boolean().default(true),
+          }),
+        )
+        .default(false),
     });
 } else {
   const deprecationWarning = `[gatsby-plugin-pinterest] From now on, you should use the 'saveButton' option to show Pinterest's save button on images.
