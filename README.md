@@ -133,8 +133,8 @@ MIT
 <!-- prettier-ignore-start -->
 [npm]: https://npmjs.com
 [node]: https://nodejs.org
-[build-badge]: https://img.shields.io/travis/robinmetral/gatsby-plugin-pinterest.svg?style=flat-square
-[build]: https://travis-ci.org/robinmetral/gatsby-plugin-pinterest
+[build-badge]: https://img.shields.io/github/workflow/status/robinmetral/gatsby-plugin-pinterest/validate?logo=github&style=flat-square
+[build]: https://github.com/robinmetral/gatsby-plugin-pinterest/actions?query=workflow%3Avalidate
 [coverage-badge]: https://img.shields.io/codecov/c/github/robinmetral/gatsby-plugin-pinterest.svg?style=flat-square
 [coverage]: https://codecov.io/github/robinmetral/gatsby-plugin-pinterest
 [version-badge]: https://img.shields.io/npm/v/gatsby-plugin-pinterest.svg?style=flat-square
