@@ -43,6 +43,15 @@
         "infra",
         "tool"
       ]
+    },
+    {
+      "login": "robinske",
+      "name": "Kelley Robinson",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3673341?v=4",
+      "profile": "https://github.com/robinske",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
