@@ -19,7 +19,7 @@ const injectPinterestScript = ({ saveButton = false }) => {
       }
     }
 
-    document.getElementsByTagName("head")[0].appendChild(script);
+    document.getElementsByTagName("body")[0].appendChild(script);
   };
 
   addJS();
