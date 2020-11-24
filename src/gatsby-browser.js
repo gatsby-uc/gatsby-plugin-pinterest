@@ -28,9 +28,11 @@ const injectPinterestScript = ({ saveButton = false }) => {
 let injectedPinterestScript = false;
 
 exports.onRouteUpdate = (args, pluginOptions = {}) => {
+  const hover = Boolean(pluginOptions.saveButton)
+
   const querySelectors = [
     "[data-pin-do]",
-    Boolean(pluginOptions.saveButton) ? "img" : "",
+    hover ? "img" : "",
   ]
     .filter(Boolean)
     .join(",");
@@ -40,6 +42,14 @@ exports.onRouteUpdate = (args, pluginOptions = {}) => {
       injectPinterestScript(pluginOptions);
 
       injectedPinterestScript = true;
+    }
+
+    if (
+      !hover &&
+      typeof PinUtils !== `undefined` &&
+      typeof window.PinUtils.build === `function`
+    ) {
+      window.PinUtils.build()
     }
   }
 };
