@@ -23,6 +23,8 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Show Save Button on hover](#show-save-button-on-hover)
+  - [Manually show Save Button](#manually-show-save-button)
 - [Inspiration](#inspiration)
 - [Issues](#issues)
   - [🐛 Bugs](#-bugs)
@@ -51,6 +53,14 @@ This library has a `peerDependencies` listing for [`gatsby`][gatsby].
 
 ## Usage
 
+Use the `options` to configure the script with
+[available attributes](https://developers.pinterest.com/docs/widgets/save/?#button-style-settings).
+
+Note: not all attributes are supported in the plugin yet.
+[See issues for more details](https://github.com/robinmetral/gatsby-plugin-pinterest/issues).
+
+### Show Save Button on hover
+
 ```js
 // In your gatsby-config.js
 
@@ -61,6 +71,7 @@ module.exports = {
       resolve: `gatsby-plugin-pinterest`,
       options: {
         // If you just want to use the default, you can set this to `true`, defaults to `false`
+        // This sets the data-pin-hover attribute in the script
         saveButton: {
           // Set to true to hide the text and display only a round P button
           round: false, // default
@@ -74,6 +85,45 @@ module.exports = {
   ],
 };
 ```
+
+### Manually show Save Button
+
+```js
+// In your gatsby-config.js
+
+module.exports = {
+  // Find the 'plugins' array
+  plugins: [
+    {
+      resolve: `gatsby-plugin-pinterest`,
+    },
+    // Other plugins here...
+  ],
+};
+```
+
+Then in your code:
+
+```js
+const pinType = "buttonPin"; // for one image or "buttonBookmark" for any image
+
+// Optional parameters
+// Source settings. See: https://developers.pinterest.com/docs/widgets/save/?#button-style-settings
+const url = "https://mysite.com/sourdough-dinner-rolls";
+const description = `&description="this is my favorite recipe for sourdough dinner rolls"`;
+const mediaUrl =
+  pinType === "buttonPin"
+    ? `&media=https://mysite.com/images/dinner-rolls.png`
+    : ""; // don't supply the mediaUrl for buttonBookmark
+
+const to = `https://www.pinterest.com/pin/create/button/?url=${url}${description}${mediaUrl}`;
+
+// Add this to your component where you want the button to appear
+return <a href={to} target="_blank" rel="noreferrer" data-pin-do={pinType} />;
+```
+
+Manually add source settings like `url`, `description`, and `mediaUrl` since
+[gatsby-image doesn't support custom image attributes](https://github.com/robinmetral/gatsby-plugin-pinterest/issues/30).
 
 ## Inspiration
 
@@ -118,6 +168,7 @@ Thanks goes to these wonderful people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
