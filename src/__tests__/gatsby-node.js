@@ -11,11 +11,13 @@ test.each`
 `(
   "should provide meaningful errors when fields are invalid: $saveButton",
   async ({ expectedErrors, saveButton }) => {
-    const { errors } = await testPluginOptionsSchema(pluginOptionsSchema, {
-      saveButton,
-    });
+    const {
+      errors,
+      isValid,
+    } = await testPluginOptionsSchema(pluginOptionsSchema, { saveButton });
 
     expect(errors).toEqual(expectedErrors);
+    expect(isValid).toBe(false);
   },
 );
 
@@ -25,12 +27,13 @@ test("should provide meaningful errors when fields are deprecated", async () => 
     "'tall' is no longer supported. Use 'saveButton.tall' instead by setting it to the same value you had before on 'tall'.",
   ];
 
-  const { errors } = await testPluginOptionsSchema(pluginOptionsSchema, {
-    round: true,
-    tall: true,
-  });
+  const { errors, isValid } = await testPluginOptionsSchema(
+    pluginOptionsSchema,
+    { round: true, tall: true },
+  );
 
   expect(errors).toEqual(expectedErrors);
+  expect(isValid).toBe(false);
 });
 
 test.each`
@@ -45,9 +48,11 @@ test.each`
   ${{ tall: false }}
   ${{ round: true, tall: true }}
 `("should validate the schema: $saveButton", async ({ saveButton }) => {
-  const { isValid } = await testPluginOptionsSchema(pluginOptionsSchema, {
-    saveButton,
-  });
+  const { errors, isValid } = await testPluginOptionsSchema(
+    pluginOptionsSchema,
+    { saveButton },
+  );
 
+  expect(errors).toEqual([]);
   expect(isValid).toBe(true);
 });
